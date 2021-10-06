@@ -1,0 +1,1 @@
+This project is used in educational purposes and based on the book of A. Freeman "Pro ASP.NET MVC 5"
