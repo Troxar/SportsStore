@@ -1,0 +1,23 @@
+USE master;
+GO
+
+DECLARE @name AS VARCHAR(255),
+		@path AS VARCHAR(255),
+		@path_data AS VARCHAR(255),
+		@path_log AS VARCHAR(255);
+
+SET @name = 'SportsStore';
+		
+/* put here the path to the local folder, for example 'D:\SportsStore\' */
+SET @path = '...';
+
+SET @path_data = @path + @name + '.mdf';
+SET @path_log = @path + @name + '.ldf';
+
+EXECUTE(
+'CREATE DATABASE ' + @name + '
+	ON PRIMARY (NAME = ' + @name + '_dat,
+			FILENAME = ''' + @path_data + ''')
+LOG ON (NAME = ' + @name + '_log,
+	FILENAME = ''' + @path_log + ''')');
+GO
