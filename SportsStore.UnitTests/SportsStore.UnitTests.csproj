@@ -90,6 +90,7 @@
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="CartTests.cs" />
     <Compile Include="AdminTests.cs" />
+    <Compile Include="AdminSecurityTests.cs" />
     <Compile Include="WebUITests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
