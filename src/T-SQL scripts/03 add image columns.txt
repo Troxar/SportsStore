@@ -1,0 +1,6 @@
+USE SportsStore;
+GO
+
+ALTER TABLE Products
+	ADD [ImageData] VARBINARY(MAX) NULL,
+		[ImageType] VARCHAR(50) NULL;
