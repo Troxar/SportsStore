@@ -34,7 +34,7 @@ namespace SportsStore.Domain.Entities
 
         public decimal ComputeTotalValue()
         {
-            return lineCollection.Sum(e => e.Product.Price * e.Quantity);
+            return lineCollection.Sum(e => e.ComputeValue());
         }
 
         public void Clear()
@@ -46,11 +46,5 @@ namespace SportsStore.Domain.Entities
         {
             get { return lineCollection; }
         }
-    }
-
-    public class CartLine
-    {
-        public Product Product { get; set; }
-        public int Quantity { get; set; }
     }
 }

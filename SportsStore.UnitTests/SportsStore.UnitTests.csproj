@@ -92,6 +92,7 @@
     <Compile Include="AdminTests.cs" />
     <Compile Include="AdminSecurityTests.cs" />
     <Compile Include="ImageTests.cs" />
+    <Compile Include="CartLineTests.cs" />
     <Compile Include="WebUITests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
